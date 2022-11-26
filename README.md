@@ -14,3 +14,5 @@ The measurement of the Power consumption during and out of the sleep mode will b
 
 The Sleep Modes are documented here:
 https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/sleep_modes.html
+
+This project is part of the Module *Energieeffiziente Mikrocontrollersysteme* at Karlsruhe University of Applied Sciences.

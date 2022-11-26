@@ -23,7 +23,7 @@ void startDeepSleep()
 // Other stuff can be made here, this is just a dummy
 void doSomethingElse(){
   // LED an
-  Serial.println("Ich mache für 1 Sekunde was anderes...");
+  Serial.println("I'm doing something else for 1 second...");
   delay(1000);
   // LED aus
 }
@@ -31,14 +31,14 @@ void doSomethingElse(){
 // Caution: the setup function is called every time the ESP32 wakes up from deepsleep
 void setup() {
     Serial.begin(115200);
-    Serial.println("Ich bin wach");
+    Serial.println("I'm awake");
 
     // Attach the interrupt to an external Touchpin at T0 = GPIO4
     touchAttachInterrupt(T0, gotTouched, THRESHOLD); 
 
     doSomethingElse();
     
-    Serial.println("Ich schlafe wieder");
+    Serial.println("I'm going to sleep...");
     Serial.println("");
     startDeepSleep();
 
